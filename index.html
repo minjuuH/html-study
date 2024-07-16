@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movierecorde</title>
+
+    <style>
+        nav {
+            border-style: none none solid none;
+            border-width: 1px;
+            border-color: rgb(216, 216, 216);
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            margin: 0px 60px;
+            background-color: white;
+        }
+        .section-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .section-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+            background-color: rgb(236, 236, 236);
+            width: 300px;
+        }
+        .search-box input {
+            border: none;
+            color: rgb(61, 61, 61);
+            background-color: transparent;
+            width: 100%;
+            margin: 3%;
+        }
+        .signup-btn button {
+            /*all: unset;*/
+            border-radius: 4px;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+            background-color: white;
+            height: 36px;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+        .signup-btn span {
+            position: relative;
+        }
+        .list-name {
+            font-size: larger;
+            font-weight: bold;
+        }
+        .poster-container {
+            width: inherit; height: 360px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            overflow: hidden;
+        }
+        .poster-img {
+            object-fit: cover;
+            width: 100%; height: 100%;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <header>
+        <nav>
+            <section>
+                <div class="section-left">
+                    <span>메인로고삽입</span>
+                    <span>영화</span>
+                    <span>시리즈</span>
+                </div>
+                <div class="section-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="작품명이나 키워드를 검색해보세요">
+                    </div>
+                    <div class="signin-btn">
+                        <button>로그인</button>
+                    </div>
+                    <div class="signup-btn">
+                        <button>
+                            <span>회원가입</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+</body>
+</html>
