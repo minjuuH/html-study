@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>movierecorde</title>
 
     <style>
+        .modal {
+            /* display: none; */
+            position: fixed; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.267);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            width: 350px; height: 600px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .modal-input {
+            width: 70%;
+            background-color: #e9e9e9;
+        }
+        .modal-content input {
+            all: unset;
+        }
         nav {
             border-style: none none solid none;
             border-width: 1px;
@@ -119,7 +140,7 @@
                         <input type="text" placeholder="작품명이나 키워드를 검색해보세요">
                     </div>
                     <div class="signup-btn">
-                        <button style="background-color: #12b383; color: white; border-color: transparent;">로그인</button>
+                        <button id="signinBtn" style="background-color: #12b383; color: white; border-color: transparent;">로그인</button>
                     </div>
                     <div class="signup-btn">
                         <button>회원가입</button>
@@ -128,6 +149,25 @@
             </section>
         </nav>
     </header>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <form id="loginForm">
+                <p>
+                    <label id="modalTitle">로그인창</label>
+                </p>
+                <menu>
+                    <div class="modal-input">
+                        <input type="text" placeholder="아이디">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="비밀번호">
+                    </div>
+                    <button class="signup-btn">로그인</button>
+                </menu>
+            </form>
+        </div>
+        
+    </div>
     <div style="margin: 0px 60px;">
         <div>
             <p class="list-name">박스오피스 순위</p>
@@ -200,5 +240,7 @@
             <p>평가 많은 작품</p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
