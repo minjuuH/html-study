@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     const signinButton = document.getElementById('signinBtn');
+    const signupButton = document.getElementById('signupBtn');
     const modal = document.getElementById('loginModal');
     const title = document.getElementById('modalTitle');
     //const closeBtn = document.querySelector('.close');
@@ -9,6 +10,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     signinButton.addEventListener('click', ()=>{
         modal.style.display = 'flex';
         title.textContent = "로그인";
+    });
+
+    signupButton.addEventListener('click', ()=>{
+        modal.style.display = 'flex';
+        title.textContent = "회원가입";
     });
     
     // closeBtn.addEventListener('click', ()=>{
