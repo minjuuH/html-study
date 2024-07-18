@@ -29,4 +29,47 @@ document.addEventListener('DOMContentLoaded', ()=>{
             modal.style.display = 'none';
         }
     });
+
+    const lBox = document.getElementById('listBox');
+    const rBox = document.getElementById('releaseBox');
+    const pBox = document.getElementById('popularBox');
+    
+    for (let index = 0; index < 10; index++) {
+        lBox.insertAdjacentHTML(
+            "beforeend", 
+            `<div style="width: 250px;">
+                <a href="" style="text-decoration-line: none; color: black;">
+                    <div class="poster-container">
+                        <img class="poster-img" src="/image/명탐정코난.jpg" alt="명탐정 코난: 100만 달러의 펜타그램">
+                    </div>
+                    <div class="title-text">명탐정 코난: 100만 달러의 펜타그램</div>
+                    <div class="genre-year">장르명 ・ 2024</div>
+                </a>
+            </div>`
+        )
+        rBox.insertAdjacentHTML(
+            "beforeend", 
+            `<div style="width: 250px;">
+                <a href="" style="width: 250px; text-decoration-line: none; color: black;">
+                    <div class="poster-container">
+                        <img class="poster-img" src="/image/데드풀과울버린.jpg" alt="데드풀과 울버린">
+                    </div>
+                    <div class="title-text">데드풀과 울버린</div>
+                    <div class="genre-year">장르명 ・ 2024</div>
+                </a>
+            </div>`
+        )
+        pBox.insertAdjacentHTML(
+            "beforeend", 
+            `<div style="width: 250px;">
+                <a href="" style="width: 250px; text-decoration-line: none; color: black;">
+                    <div class="poster-container">
+                        <img class="poster-img" src="/image/데드풀과울버린.jpg" alt="데드풀과 울버린">
+                    </div>
+                    <div class="title-text">데드풀과 울버린</div>
+                    <div class="genre-year">장르명 ・ 2024</div>
+                </a>
+            </div>`
+        )
+    }
 });
