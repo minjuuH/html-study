@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const btnText = document.getElementById('btnTxt');
     const modal = document.getElementById('loginModal');
     const title = document.getElementById('modalTitle');
+    const findIdPw = document.getElementById('findID');
+    const hiddenTxt = document.getElementById('hiddenTxt');
     //const closeBtn = document.querySelector('.close');
     
     console.log("ok");
@@ -12,12 +14,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
         modal.style.display = 'flex';
         title.textContent = "로그인";
         btnText.textContent = '로그인';
+        //findIdPw.style.display = 'flex';
+        hiddenTxt.style.display = 'none';
     });
 
     signupButton.addEventListener('click', ()=>{
         modal.style.display = 'flex';
         title.textContent = "회원가입";
         btnText.textContent = '회원가입';
+        findIdPw.style.display = 'none';
+        hiddenTxt.style.display = 'inline';
     });
     
     // closeBtn.addEventListener('click', ()=>{
